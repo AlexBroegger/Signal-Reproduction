@@ -12,6 +12,10 @@ Another problem comes to mind when considering the modularity. Usually in ADCs, 
 
 It should be noted that the FPGA does include an internal ADC, but out of curiosity, it has been chosen that i will construct my own.
 
+The main things to consider, when handling the trade-offs for the ADC, is defining the range of signals we need to process, in relation to the properties of the DFT (Which will most likely be implemented as an FFT). The lab equipment that can be used for the project includes a 1 Hz - 50 MHz generator, with a $\pm 10 V$ range, and a 70 MHz oscilloscope. This means for practical reasons we are limited by the generator, meaning only signals in the frequency range 1 Hz - 50 MHz are initially considered.
+
+With respect to the range, and the nyquist sampling theorem, we must sample at atleast 100 MHz. This is a problem, because this introduces the possibilty for aliasing. Therefore a filter is needed to quite harshly attenuate signals above 50 MHz. 
+(Note: the cutoff-frequency can be changed by oversampling)
 
 
 
