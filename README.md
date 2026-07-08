@@ -1,8 +1,8 @@
-## General idea of the Signal Reproduction
+# General idea of the Signal Reproduction
 
 Create a signal with two known sinusoid voltages, use an ADC to feed into an FPGA, which implements a FFT. Using the internal DAC, reconstruct one of the sinusoids present in the measured voltage.
 
-## Initial requirements
+# Initial requirements
 
 The main purpose of this mini-project, is to accurately repoduce sinusoidal signals, specifically represented by voltages. By reproduction, it is meant that the amplitude, and the frequency of the signal is accurately matched to the original component.
 
@@ -19,14 +19,14 @@ With respect to the range, and the nyquist sampling theorem, we must sample at a
 
 At higher frequencies, implementation can be cumbersome, due to high-frequency parasitics such as inductances or capacitances in the implementation medium. For example, a bread board is not well suited for such high frequencies. Due to the project being an introduction to PCB and ADC design, some weight should be put on having a nicer learning experience.
 
-# Conclusion of initial requirements
+## Conclusion of initial requirements
 
 
 
 
 
-## General system design
+# General system design
 
-## Test
+# Test
 
-## Conclusion
+# Conclusion
