@@ -2,7 +2,7 @@
 
 Create a signal with two known sinusoid voltages, use an ADC to feed into an FPGA, which implements a FFT. Using the internal DAC, reconstruct one of the sinusoids present in the measured voltage.
 
-# Initial requirements
+# Initial requirements and problem analysis
 
 The main purpose of this mini-project, is to accurately repoduce sinusoidal signals, specifically represented by voltages. By reproduction, it is meant that the amplitude, and the frequency of the signal is accurately matched to the original component.
 
