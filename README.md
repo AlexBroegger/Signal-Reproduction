@@ -2,6 +2,10 @@
 
 Create a signal with two known sinusoid voltages, use an ADC to feed into an FPGA, which implements a FFT. Using the internal DAC, reconstruct one of the sinusoids present in the measured voltage.
 
+![imageblock](https://github.com/AlexBroegger/Signal-Reproduction/blob/main/FIGS/blockdiagram.png)
+
+From the figure, it can be seen that we have a voluntary sinusoid voltage source. The voltage source is fed into the ADC, which converts it into a digital reconstruction of the analogue sinusoids. This makes it possible to process it on the FPGA, which will be running a discrete version Fourier Transform. The FPGA will then, using its internal DAC, output one or both of the sinusoid components present in the original signal. 
+
 # Initial requirements and problem analysis
 
 The main purpose of this mini-project, is to accurately repoduce sinusoidal signals, specifically represented by voltages. By reproduction, it is meant that the amplitude, and the frequency of the signal is accurately matched to the original component.
