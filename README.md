@@ -23,6 +23,8 @@ With respect to the range, and the nyquist sampling theorem, we must sample at a
 
 At higher frequencies, implementation can be cumbersome, due to high-frequency parasitics such as inductances or capacitances in the implementation medium. For example, a bread board is not well suited for such high frequencies. Due to the project being an introduction to PCB and ADC design, some weight should be put on having a nicer learning experience.
 
+For the DFT, the main concerns 
+
 ## Conclusion of initial requirements
 
 
