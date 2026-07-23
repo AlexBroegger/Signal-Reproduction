@@ -29,7 +29,14 @@ Another concern of the DFT, is smearing. If our sampling doesnt exactly contain 
 
 ## Conclusion of initial requirements
 
+From the previous section, we have established multiple focus points:
 
+<ul>
+  <li>ADC</li>
+  <li>Sample/Hold</li>
+  <li>DFT</li>
+  <li>FPGA</li>
+</ul> 
 
 
 
